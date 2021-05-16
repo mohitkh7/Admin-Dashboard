@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: inter, sans-serif;
+}
+
+/* || Utilities */
+.bg-grey {
+    background-color: #f3f6f9;
+}
+
+.heading-2 {
+    color: #223345;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+/* || Side-Panel */
+.side-panel {
+    background-color: #0b2559;
+    color: #99a9c7;
+    font-size: .8rem;
+}
+
+.side-item {
+    margin: .8rem 0;
+}
+.side-item:hover {
+    color: #f7feff;
+    cursor: pointer;
+}
+
+.side-item__badge {
+    text-align: right;
+}
+
+.side-item--title,
+.side-item--title:hover {
+    margin-top: 2rem;
+    color:#62769b;
+    cursor: none;
+}
+
+.side-item--active {
+    color: #f7feff;
+}
+
+/* || Main */
+
+
+/* || header */
+.title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* stats card */
+.stats-title {
+    color: #adb9c2;
+}
+
+.stats-value {
+    color: #2a343d;
+    font-size: 2em;
+}
+.stats-change {
+    color: #07c180;
+}
+
+/* || product list */
+.product-text {
+    font-size: .875em;
+    color: #223345;
+}
+.product-price {
+    font-size: .875em;
+    font-weight: 700;
+}
+
+/* || order count */
+.orders {
+    background-color: #5a75f8;
+    color: #9fb0fa;
+}
+
+.orders-count {
+    color: #ebeefe;
+
+}
+
+/* || city statistics */
+.city-stats {
+    height: 200px;
+}
+
+/* || recent orders */
+tr > th:nth-child(4),
+tr > td:nth-child(4) {
+    text-align: right;
+}
