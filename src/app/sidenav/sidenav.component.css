@@ -1,0 +1,30 @@
+/* || Side-Panel */
+.side-panel {
+    height: 100%;
+    background-color: #0b2559;
+    color: #99a9c7;
+    font-size: .8rem;
+}
+
+.side-item {
+    margin: .8rem 0;
+}
+.side-item:hover {
+    color: #f7feff;
+    cursor: pointer;
+}
+
+.side-item__badge {
+    text-align: right;
+}
+
+.side-item--title,
+.side-item--title:hover {
+    margin-top: 2rem;
+    color:#62769b;
+    cursor: none;
+}
+
+.side-item--active {
+    color: #f7feff;
+}
