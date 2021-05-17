@@ -178,7 +178,14 @@
                         <div class="card shadow-sm mt-3">
                             <div class="card-body">
                                 <div class="card-title heading-2">Sales Report</div>
-                                <canvas id="lineChart"></canvas>
+                                <canvas baseChart 
+                                    [datasets]="lineChartData"
+                                    [labels]="lineChartLabels"
+                                    [options]="lineChartOptions"
+                                    [plugins]="lineChartPlugins"
+                                    [legend]="lineChartLegend"
+                                    [chartType]="lineChartType">
+                                </canvas>
                             </div>
                         </div>
                     </div>
@@ -263,7 +270,14 @@
                                     </div>
                                 </div>
                                 <div class="row pt-2">
-                                    <canvas id="barChart"></canvas>
+                                    <canvas baseChart 
+                                        [datasets]="barChartData"
+                                        [labels]="barChartLabels"
+                                        [options]="barChartOptions"
+                                        [plugins]="barChartPlugins"
+                                        [legend]="barChartLegend"
+                                        [chartType]="barChartType">
+                                    </canvas>
                                 </div>
                             </div>
                         </div>
@@ -314,7 +328,14 @@
                         <div class="card shadow-sm">
                             <div class="card-body">
                                 <div class="card-title heading-2">Popular Categories</div>
-                                <canvas id="myChart"></canvas>
+                                <canvas baseChart 
+                                    [datasets]="doughnutChartData"
+                                    [labels]="doughnutChartLabels"
+                                    [options]="doughnutChartOptions"
+                                    [plugins]="doughnutChartPlugins"
+                                    [legend]="doughnutChartLegend"
+                                    [chartType]="doughnutChartType">
+                                </canvas>
                             </div>
                         </div>
                     </div>
@@ -485,7 +506,6 @@
 
 <!-- line chart -->
 <script>
-    const lineLabels = ['22 Jun', '23 Jun', '24 Jun', '25 Jun', '26 Jun', '27 Jun', '28 Jun'];
     const lineData = {
         labels: lineLabels,
         datasets: [
