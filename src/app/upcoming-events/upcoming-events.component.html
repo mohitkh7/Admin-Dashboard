@@ -1,0 +1,16 @@
+<div class="card shadow-sm">
+    <div class="card-body">
+        <div class="card-title heading-2">Upcoming Events</div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0" *ngFor="let event of events">
+                <div class="row">
+                    <div class="col-md-4 text-secondary">
+                        <i class="fa fa-calendar" aria-hidden="true"></i> {{ event.date | date: 'd MMM, EEE' }}
+                    </div>
+                    <div class="col-md-8">{{ event.title }}</div>
+                </div>
+            </li>
+        </ul>
+        <button type="button" class="btn btn-secondary btn-sm">See All</button>
+    </div>
+</div>

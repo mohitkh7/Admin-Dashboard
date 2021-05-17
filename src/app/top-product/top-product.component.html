@@ -1,0 +1,16 @@
+<div class="card shadow-sm">
+    <div class="card-body">
+        <div class="card-title heading-2">Top Selling Product</div>
+        <ul class="list-group list-group-flush">
+            <div class="list-group-item px-0" *ngFor="let product of products">
+                <div class="row">
+                    <div class="product-image col-md-2">
+                        <img class="img-fluid rounded shadow-sm" src="{{product.img}}" />
+                    </div>
+                    <div class="product-text col-md-6">{{product.name}}</div>
+                    <div class="product-price col-md-4 text-end">{{ product.amount | currency: 'USD': 'symbol':'1.0-0' }}</div>
+                </div>
+            </div>
+        </ul>
+    </div>
+</div>

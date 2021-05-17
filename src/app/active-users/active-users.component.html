@@ -1,0 +1,19 @@
+<div class="card shadow-sm mt-3">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="heading-2">Active Users</div>
+                <div class="text-secondary">Page views per day</div>
+            </div>
+            <div class="col-md-4  heading-2 text-end">
+                <i class="fa fa-user" aria-hidden="true"></i> 200
+            </div>
+        </div>
+        <div class="row pt-2">
+            <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels"
+                [options]="barChartOptions" [plugins]="barChartPlugins" [legend]="barChartLegend"
+                [chartType]="barChartType">
+            </canvas>
+        </div>
+    </div>
+</div>

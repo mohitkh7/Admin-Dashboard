@@ -1,0 +1,13 @@
+<div class="card shadow-sm mt-3">
+    <div class="card-body">
+        <div class="card-title heading-2">Sales Report</div>
+        <canvas baseChart 
+            [datasets]="lineChartData" 
+            [labels]="lineChartLabels" 
+            [options]="lineChartOptions"
+            [plugins]="lineChartPlugins"
+            [legend]="lineChartLegend" 
+            [chartType]="lineChartType">
+        </canvas>
+    </div>
+</div>
