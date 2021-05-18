@@ -59,8 +59,21 @@
         <div class="col-md-4">
             <div class="card shadow-sm orders">
                 <div class="card-body">
-                    <div><span class="fs-1 orders-count">1860</span> / 3k Target</div>
-                    <div>orders in period</div>
+                    <div class="row">
+                        <div class="col-4">
+                            <circle-progress
+                                [percent]="62"
+                                [title]="'62%'"
+                                [outerStrokeColor]="'#ffffff'"
+                                [innerStrokeColor]="'#7893fc'"
+                                [titleColor]="'#ffffff'"
+                            ></circle-progress>
+                        </div>
+                        <div class="col-8">
+                            <div><span class="fs-1 orders-count">1860</span> / 3k Target</div>
+                            <div>orders in period</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <app-active-users></app-active-users>
