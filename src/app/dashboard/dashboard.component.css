@@ -1,0 +1,33 @@
+/* || header */
+.title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* stats card */
+.stats-title {
+    color: #adb9c2;
+}
+
+.stats-value {
+    color: #2a343d;
+    font-size: 2em;
+}
+.stats-change {
+    color: #07c180;
+}
+
+/* || order count */
+.orders {
+    background-color: #5a75f8;
+    color: #9fb0fa;
+}
+
+.orders-count {
+    color: #ebeefe;
+}
+
+/* || city statistics */
+.city-stats {
+    height: 200px;
+}
