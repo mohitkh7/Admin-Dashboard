@@ -1,26 +1,34 @@
 <nav class="navbar navbar-expand-md navbar-light shadow-sm">
     <div class="container-fluid">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fa fa-bell-o" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <i class="fa fa-user" aria-hidden="true"></i> Kate Doe
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-            </li>
-        </ul>
+        <a class="navbar-brand" href="#">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i> Kate Doe
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>

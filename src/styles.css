@@ -3,6 +3,11 @@ body {
     font-family: inter, sans-serif;
 }
 
+/* override BS classes */
+.card {
+    margin-bottom: .5rem;
+}
+
 /* || Utilities */
 .bg-grey {
     background-color: #f3f6f9;
