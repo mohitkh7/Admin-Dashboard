@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/keito-assignment",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
