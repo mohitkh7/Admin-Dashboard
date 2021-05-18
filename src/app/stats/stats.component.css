@@ -1,0 +1,11 @@
+.stats-title {
+    color: #adb9c2;
+}
+
+.stats-value {
+    color: #2a343d;
+    font-size: 2em;
+}
+.stats-change {
+    color: #07c180;
+}

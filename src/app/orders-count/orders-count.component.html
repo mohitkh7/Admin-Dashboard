@@ -1,0 +1,19 @@
+<div class="card shadow-sm orders">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-4">
+                <circle-progress
+                    [percent]="orderPerc"
+                    [title]="orderPerc+ '%'"
+                    [outerStrokeColor]="'#ffffff'"
+                    [innerStrokeColor]="'#7893fc'"
+                    [titleColor]="'#ffffff'"
+                ></circle-progress>
+            </div>
+            <div class="col-8">
+                <div><span class="fs-1 orders-count">{{ orders }}</span> / {{target / 1000 | number:'1.0-0'}}k Target</div>
+                <div>orders in period</div>
+            </div>
+        </div>
+    </div>
+</div>

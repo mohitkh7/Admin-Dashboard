@@ -12,29 +12,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>01 Jun 2020 17:56 AM</td>
-                        <td>Paula Allen</td>
-                        <td class="text-success">&#9679; Completed</td>
-                        <td>$104.98</td>
-                    </tr>
-                    <tr>
-                        <td>01 Jun 2020 16:23 AM</td>
-                        <td>Kevin Adkins</td>
-                        <td class="text-success">&#9679; Completed</td>
-                        <td>$233.00</td>
-                    </tr>
-                    <tr>
-                        <td>01 Jun 2020 14:17 AM</td>
-                        <td>Joyes Murray</td>
-                        <td class="text-warning">&#9679; Pending</td>
-                        <td>$170.25</td>
-                    </tr>
-                    <tr>
-                        <td>01 Jun 2020 10:34 AM</td>
-                        <td>Albert Ortiz</td>
-                        <td class="text-danger">&#9679; Cancelled</td>
-                        <td>$180.25</td>
+                    <tr *ngFor="let order of orders">
+                        <td>{{ order.date | date: 'dd MMM yyyy HH:mm aaa' }}</td>
+                        <td>{{ order.customer }}</td>
+                        <td [class]="getStatusClass(order.status)">&#9679; {{ order.status }}</td>
+                        <td>{{ order.total | currency }}</td>
                     </tr>
                 </tbody>
             </table>

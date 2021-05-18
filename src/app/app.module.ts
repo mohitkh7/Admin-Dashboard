@@ -12,6 +12,8 @@ import { SalesReportComponent } from './sales-report/sales-report.component';
 import { PopularCategoriesComponent } from './popular-categories/popular-categories.component';
 import { ActiveUsersComponent } from './active-users/active-users.component';
 import { UpcomingEventsComponent } from './upcoming-events/upcoming-events.component';
+import { StatsComponent } from './stats/stats.component';
+import { OrdersCountComponent } from './orders-count/orders-count.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { UpcomingEventsComponent } from './upcoming-events/upcoming-events.compo
     SalesReportComponent,
     PopularCategoriesComponent,
     ActiveUsersComponent,
-    UpcomingEventsComponent
+    UpcomingEventsComponent,
+    StatsComponent,
+    OrdersCountComponent
   ],
   imports: [
     BrowserModule,

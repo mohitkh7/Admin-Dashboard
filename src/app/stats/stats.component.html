@@ -1,0 +1,9 @@
+<div class="card shadow-sm stats">
+    <div class="card-body">
+        <div class="stats-title">{{ title }}</div>
+        <div class="stats-amount">
+            <span class="stats-value">{{ value | currency: 'USD': 'symbol':'1.0-0'}}</span>
+            <span class="stats-change">+{{ change }}%</span>
+        </div>
+    </div>
+</div>

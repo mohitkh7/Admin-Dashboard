@@ -17,11 +17,26 @@ export class RecentOrdersComponent implements OnInit {
 
   getRecentOrders(): void {
     this.orders = [
-      {date: new Date(), customer: 'Paula Allen', status: 'completed', total: 104.98},
-      {date: new Date(), customer: 'Kevin Adkins', status: 'completed', total: 233.00},
-      {date: new Date(), customer: 'Joyes Murray', status: 'completed', total: 170.25},
-      {date: new Date(), customer: 'Albert Ortiz', status: 'completed', total: 180.25},
+      {date: new Date(2021, 5, 19, 16, 23), customer: 'Paula Allen', status: 'Completed', total: 104.98},
+      {date: new Date(2021, 5, 19, 15, 47), customer: 'Kevin Adkins', status: 'Completed', total: 233.00},
+      {date: new Date(2021, 5, 19, 15, 3), customer: 'Joyes Murray', status: 'Pending', total: 170.25},
+      {date: new Date(2021, 5, 19, 11, 55), customer: 'Albert Ortiz', status: 'Cancelled', total: 180.25},
     ];
+  }
+  
+  getStatusClass(status: string): string {
+    let cssClass = '';
+    switch(status) {
+      case 'Cancelled':
+        cssClass = 'text-danger';
+        break;
+      case 'Pending':
+        cssClass = 'text-warning';
+        break;
+      default:
+        cssClass = 'text-success';
+    }
+    return cssClass;
   }
 
 }

@@ -15,67 +15,24 @@
         <div class="col-lg-8">
             <div class="row">
                 <div class="col-sm-6 col-md-4">
-                    <div class="card shadow-sm stats">
-                        <div class="card-body">
-                            <div class="stats-title">Total Profit</div>
-                            <div class="stats-amount">
-                                <span class="stats-value">$95,595</span>
-                                <span class="stats-change">+3.55%</span>
-                            </div>
-                        </div>
-                    </div>
+                    <app-stats [title]="'Total Profit'" [value]="95595" [change]="3.55"></app-stats>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <div class="card shadow-sm stats">
-                        <div class="card-body">
-                            <div class="stats-title">Total Expenses</div>
-                            <div class="stats-amount">
-                                <span class="stats-value">$12,789</span>
-                                <span class="stats-change">+2.67%</span>
-                            </div>
-                        </div>
-                    </div>
+                    <app-stats [title]="'Total Expenses'" [value]="12789" [change]="2.67"></app-stats>
                 </div>
                 <div class="col-sm-6 col-md-4">
-                    <div class="card shadow-sm stats">
-                        <div class="card-body">
-                            <div class="stats-title">New Users</div>
-                            <div class="stats-amount">
-                                <span class="stats-value">1,984</span>
-                                <span class="stats-change">+9.89%</span>
-                            </div>
-                        </div>
-                    </div>
+                    <app-stats [title]="'New Users'" [value]="1984" [change]="9.89"></app-stats>
                 </div>
             </div>
             <app-sales-report></app-sales-report>
         </div>
-
         <div class="col-lg-4">
             <app-top-product></app-top-product>
         </div>
     </div>
     <div class="row mt-3">
         <div class="col-md-6 col-lg-4">
-            <div class="card shadow-sm orders">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-4">
-                            <circle-progress
-                                [percent]="62"
-                                [title]="'62%'"
-                                [outerStrokeColor]="'#ffffff'"
-                                [innerStrokeColor]="'#7893fc'"
-                                [titleColor]="'#ffffff'"
-                            ></circle-progress>
-                        </div>
-                        <div class="col-8">
-                            <div><span class="fs-1 orders-count">1860</span> / 3k Target</div>
-                            <div>orders in period</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <app-orders-count></app-orders-count>
             <app-active-users></app-active-users>
         </div>
         <div class="col-md-6 col-lg-4">
