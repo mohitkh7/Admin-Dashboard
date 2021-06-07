@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/keito-assignment",
+    "public": "dist/admin-dashboard",
     "ignore": [
       "firebase.json",
       "**/.*",
