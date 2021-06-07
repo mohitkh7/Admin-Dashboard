@@ -20,6 +20,7 @@ The application demo is live at [admin-dashboard-mohitkh7.web.app](https://admin
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
+## Getting Started
 ### Prerequisites
 * As we are using npm for package management, ensure its preinstalled in your system.
   ```sh
@@ -39,13 +40,13 @@ The application demo is live at [admin-dashboard-mohitkh7.web.app](https://admin
    cd admin-dashboard
    npm install
    ```
-4. run local server
+4. Run local server
    ```sh
    ng serve
    ```
    Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-5. build the project
+5. Build the project
     ```sh
     ng build --prod
     ```
@@ -61,7 +62,7 @@ Contributions are what make the open source community such an amazing place to b
 ## Contact
 You can mail me any feedback or query at mohitkh7@gmail.com
 
-- Linkedin (https://www.linkedin.com/in/mohitkh7)
+- [Linkedin](https://www.linkedin.com/in/mohitkh7)
 
 ## Acknowledgements
 * [Okasana Kuzmenko](https://www.behance.net/oksi1325f04e)
